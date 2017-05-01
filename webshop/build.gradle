@@ -1,0 +1,20 @@
+group 'com.oreshkevich.webshop'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+    repositories {
+        maven {
+            url "http://uk.maven.org/maven2"
+        }
+    }
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'mysql:mysql-connector-java:6.0.6'
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+}
